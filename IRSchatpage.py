@@ -56,7 +56,7 @@ def display_dashboard():
     with col_select:
         page_selection = st.selectbox(
             "Select a Page:",
-            ["GPT4 - API", "Excellence Guru", "DALL·E 3 - API", "Tips and Tricks"],
+            ["GPT4 - API", "IRS Helper", "DALL·E 3 - API", "Tips and Tricks"],
             index=0,
             key='page_selector'
         )
@@ -66,8 +66,8 @@ def display_dashboard():
     with col_title:
         if page_selection == "GPT4 - API":
             st.title("GPT4 - API")
-        elif page_selection == "Excellence Guru":
-            st.title("Excellence Guru")
+        elif page_selection == "IRS Helper":
+            st.title("IRS Helper")
         elif page_selection == "DALL·E 3 - API":
             st.title("DALL·E 3 - API")
         elif page_selection == "Tips and Tricks":
